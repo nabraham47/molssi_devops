@@ -7,7 +7,7 @@ molssi_devops
 
 A package containing useful math functions
 
-### Copyright
+#### Copyright
 
 Copyright (c) 2019, Nate Abraham
 
