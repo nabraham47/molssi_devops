@@ -29,10 +29,13 @@ def title_case(sentence):
 
     """
 
+    if not isinstance(sentence, str):
+        raise TypeError('Invalid, type %s - Input must be a string' %(type(sentence)))
+
     words = sentence.split()
     title = ""
     for word in words:
-        title = title + word[0].upper() + word[1:] + " "
+        title = title + word[0].upper() + word[1:].lower() + " "
     
     return title
 
